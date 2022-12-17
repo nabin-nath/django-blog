@@ -8,3 +8,6 @@ class Article(models.Model):
     date = models.DateField()
     # add thumbnail
     # add author
+
+    def __str__(self) -> str:
+        return self.title
